@@ -6,6 +6,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- 🔥 FAVICON -->
+
+  <link rel="icon" href="logo.png">
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -17,29 +21,72 @@
     .header {
       background: linear-gradient(135deg, #1e3a8a, #2563eb);
       color: white;
-      padding: 40px 20px;
+      padding: 50px 20px 60px;
       text-align: center;
     }
 
     .logo {
-      width: 90px;
+      width: 80px;
       margin-bottom: 10px;
     }
 
     .header h1 {
       margin: 10px 0 0;
-      font-size: 30px;
+      font-size: 32px;
     }
 
     .header p {
       margin-top: 6px;
       opacity: 0.9;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-top: 12px;
+      font-weight: 500;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 16px;
+      border-radius: 8px;
       font-size: 14px;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #1e3a8a;
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background: #e5e7eb;
+    }
+
+    .btn-outline {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
     }
 
     .container {
       max-width: 900px;
-      margin: -30px auto 40px;
+      margin: -40px auto 40px;
       padding: 20px;
     }
 
@@ -48,7 +95,12 @@
       padding: 24px;
       margin-bottom: 20px;
       border-radius: 16px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
     }
 
     h2 {
@@ -60,22 +112,17 @@
       padding-left: 20px;
     }
 
+    hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 20px 0;
+    }
+
     .footer {
       text-align: center;
       font-size: 13px;
       color: #6b7280;
       margin-top: 30px;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #e0e7ff;
-      color: #1e3a8a;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 12px;
-      margin-top: 10px;
-      font-weight: 500;
     }
   </style>
 
@@ -84,12 +131,17 @@
 <body>
 
 <div class="header">
-  <!-- 🔥 REPLACE WITH YOUR LOGO FILE NAME -->
   <img src="logo.png" class="logo">
 
   <h1>eScanToWord</h1>
   <p>Scan • Convert • Export</p>
+
   <div class="badge">Secure • Fast • Reliable</div>
+
+  <div class="actions">
+    <a href="#" class="btn btn-primary">Open App</a>
+    <a href="mailto:stratoelevate@gmail.com" class="btn btn-outline">Contact</a>
+  </div>
 </div>
 
 <div class="container">
@@ -99,54 +151,43 @@
 <p><strong>Last updated:</strong> March 2026</p>
 
 <p>
-eScanToWord provides document scanning and OCR services. We are committed to protecting your privacy and ensuring transparency.
+eScanToWord provides document scanning and OCR services. We prioritize your privacy and data protection.
 </p>
+
+<hr>
 
 <h2>Information We Collect</h2>
 <ul>
 <li>Email address (Google Sign-In)</li>
-<li>Device ID (for account security)</li>
-<li>Usage data (scans, credits, ads interactions)</li>
+<li>Device ID (security & tracking)</li>
+<li>Usage data (scans, credits, ads)</li>
 <li>Subscription status</li>
 </ul>
 
-<h2>How We Use Information</h2>
+<h2>How We Use Data</h2>
 <ul>
-<li>Authentication and user identification</li>
-<li>Managing credits and usage limits</li>
-<li>Enabling Pro subscription features</li>
-<li>Preventing abuse and fraud</li>
-<li>Improving app performance</li>
+<li>User authentication</li>
+<li>Credits & usage tracking</li>
+<li>Subscription management</li>
+<li>Fraud prevention</li>
 </ul>
 
 <h2>Advertising</h2>
-<p>
-We use Google AdMob to display ads. Third-party providers may collect limited data.
-</p>
+<p>We use Google AdMob. Third-party services may collect limited data.</p>
 
 <h2>Payments</h2>
-<p>
-All payments are securely handled via Google Play Billing. We do not store payment details.
-</p>
+<p>Handled securely via Google Play Billing.</p>
 
 <h2>Security</h2>
-<p>
-We use backend verification, API keys, and device binding to protect your data.
-</p>
+<p>We use backend validation, API keys, and device binding.</p>
 
 <h2>Data Sharing</h2>
-<p>
-We do not sell your data. Limited sharing occurs with:
-</p>
-<ul>
-<li>Google services (login & billing)</li>
-<li>Advertising providers</li>
-</ul>
+<p>No selling of personal data. Limited sharing with Google services.</p>
 
 <h2>Your Rights</h2>
 <ul>
-<li>You may stop using the app at any time</li>
-<li>You can request data deletion</li>
+<li>Stop using the app anytime</li>
+<li>Request data deletion</li>
 </ul>
 
 <h2>Contact</h2>
@@ -156,44 +197,39 @@ We do not sell your data. Limited sharing occurs with:
 <div class="card">
 <h2>Terms & Conditions</h2>
 
-<h2>Use of Service</h2>
-<p>Use the app lawfully and responsibly.</p>
+<h2>Use</h2>
+<p>Use the app legally.</p>
 
 <h2>Accounts</h2>
 <ul>
-<li>Login via Google Sign-In</li>
-<li>Users are responsible for their accounts</li>
-<li>Device binding may be enforced</li>
+<li>Google login required</li>
+<li>Users responsible for accounts</li>
 </ul>
 
 <h2>Plans</h2>
 <ul>
-<li><strong>Free Plan:</strong> Limited usage with ads</li>
-<li><strong>Pro Plan:</strong> Unlimited usage, no ads</li>
+<li>Free: Limited + ads</li>
+<li>Pro: Unlimited + no ads</li>
 </ul>
 
 <h2>Credits</h2>
 <ul>
-<li>Free credits reset daily</li>
-<li>Ad credits earned through ads</li>
-<li>Paid credits are non-refundable</li>
+<li>Reset daily</li>
+<li>Earn via ads</li>
+<li>Paid credits non-refundable</li>
 </ul>
 
 <h2>Subscriptions</h2>
-<p>
-Subscriptions are managed via Google Play and auto-renew unless canceled.
-</p>
+<p>Managed via Google Play.</p>
 
 <h2>Restrictions</h2>
 <ul>
-<li>No abuse or bypassing limits</li>
-<li>No illegal usage</li>
+<li>No abuse</li>
+<li>No illegal use</li>
 </ul>
 
 <h2>Liability</h2>
-<p>
-We are not responsible for service interruptions or data loss.
-</p>
+<p>No responsibility for service interruptions.</p>
 
 <h2>Contact</h2>
 <p>Email: stratoelevate@gmail.com</p>
